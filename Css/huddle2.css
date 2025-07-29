@@ -36,6 +36,11 @@ nav button {
     border: 2px solid var(--Light-Pink);
 }
 
+nav button:hover{
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+
 nav button a {
     color: var(--Light-Pink);
     text-decoration: none;
@@ -45,9 +50,17 @@ nav button a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px 60px;
 }
+
+.hero-sec-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .hero-section h1 {
     font-size: 30px;
@@ -69,6 +82,10 @@ nav button a {
     border: none;
 }
 
+.hero-section button:hover {
+    background-color: var(--Light-Pink);
+}
+
 .hero-section button a {
     color: var(--Very-Pale-Blue);
     text-decoration: none;
@@ -76,25 +93,21 @@ nav button a {
     
 }
 
-.section-1 {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
-    padding: 30px 120px;
+.sec-part1{
+    width: 65%;
+    margin: 0px auto;
+    justify-content: center;
 }
-
-
 .sec-part1  img {
-    width: 80%;
+    width: 100%;
 }
 
-.sec-part2  {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    gap: 200px;
+.section-1 {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 180px;
 }
 
 
@@ -106,15 +119,15 @@ nav button a {
 }
 
 .communities img {
-    width: 20%;
+    width: 30%;
 }
 
 .communities h1 {
-    font-size: 40px;
+    font-size: 55px;
 }
 
 .communities p {
-    font-size: 12px;
+    font-size: 17px;
     color: grey;
 }
 
@@ -126,21 +139,31 @@ nav button a {
 }
 
 .messages img  {
-    width: 20%;
+    width: 30%;
 }
 
 .messages h1 {
-    font-size: 40px;
+    font-size: 55px;
 }
 
 .messages p {
-    font-size: 12px;
+    font-size: 17px;
     color: grey;
 }
 
 
-.sec-2-img img {
-    display: block;
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sect-holder1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sect-holder1 img {
     width: 100%;
 }
 
@@ -149,10 +172,11 @@ nav button a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-color: var(--Very-Pale-Blue);
-    padding: 10px 60px;
-    margin-top: -30px;
-    margin-bottom: -20px;
+    padding: 0px 60px;
+    margin-top: -5px;
+    width: 100%;
 }
 
 .grow-together img {
@@ -164,6 +188,7 @@ nav button a {
     flex-direction: column;
     align-items: start;
     gap: 15px;
+    width: 40%;
 }
 
 .grow-txt h1 {
@@ -171,21 +196,27 @@ nav button a {
 }
 
 .grow-txt p {
-    font-size: 13px;
-    width: 40%;
+    font-size: 15px;
+    width: 80%;
     color: var(--Very-Dark-Cyan);
 }
 
 
-.section-3 {
+.sect-holder2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 60px;
+    padding: 0 80px;
+    justify-content: center;
+
 }
 
-.section-3 img {
-    width: 30%;
+.flowing-img {
+    width: 40%;
+}
+
+.flowing-img img {
+    width: 70%;
 }
 
 .flowing-txt {
@@ -193,31 +224,42 @@ nav button a {
     flex-direction: column;
     align-items: start;
     gap: 15px;
+    width: 40%;
 }
 
 .flowing-txt h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .flowing-txt p {
-    font-size: 13px;
-    width: 60%;
+    font-size: 15px;
+    width: 90%;
     color: var(--Very-Dark-Cyan);
 }
 
-.sec-4-img {
-    display: block;
-    width: 100%;
+
+.sect-holder3 {
+    display: flex;
+    flex-direction: column;
+
 }
+
+.sect-holder3 img {
+    width:  100%;
+}
+
+
 
 .your-user {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: var(--Very-Pale-Blue);
-    padding: 10px 60px;
-    margin-top: -30px;
-    margin-bottom: -20px;
+    padding: 0px 60px;
+    margin-top: -5px;
+    width: 100%;
 }
 
 .your-user img {
@@ -229,6 +271,7 @@ nav button a {
     flex-direction: column;
     align-items: start;
     gap: 15px;
+    width: 40%;
 }
 
 .users-txt h1 {
@@ -236,8 +279,8 @@ nav button a {
 }
 
 .users-txt p {
-    font-size: 13px;
-    width: 50%;
+   font-size: 15px;
+    width: 87%;
     color: var(--Very-Dark-Cyan);
 }
 
@@ -262,13 +305,18 @@ nav button a {
     border: none;
 }
 
+.section-5 button:hover {
+    background-color: var(--Light-Pink);
+    
+}
+
 .section-5 button a {
     color: var(--Very-Pale-Blue);
     text-decoration: none;
     font-size: 12px;
 }
 
-.footer-background {
+.footer-background img {
     display: block;
     width: 100%;
     margin-top: 80px;
@@ -280,7 +328,7 @@ nav button a {
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
-    padding: 20px 50px 40px;
+    padding: 50px 80px 50px;
     background-color: var(--Very-Dark-Cyan);
     margin-top: -10px;
 }
@@ -375,6 +423,11 @@ nav button a {
     border-radius: 3px;
     border: none;
 }
+
+.subscribe button:hover {
+    background-color: var(--Light-Pink);
+}
+
 
 .subscribe button a {
     font-size: 14px;
